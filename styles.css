@@ -1,40 +1,110 @@
 .image1 {
-    max-height: 100vh;
-    min-height: 100vh;
-    max-width: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  
-  .carousel-caption {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 50%;
-  }
-  
-  h1 {
-    font-size: 61px;
-  }
-  
-  p1 {
-    font-size: 19px;
-  }
-  
-  .btn-custom-1 {
-    background-color: #d5cebd;
-    border-color: #d5cebd;
-    color: white;
-  }
-  
-  .btn-custom-2 {
-    background-color: #fca776;
-    border-color: #fca776;
-    color: white;
-  }
-  
-  .btn-custom-3 {
-    background-color: #d6cfa3;
-    border-color: #d6cfa3;
-    color: white;
-  }
+  max-height: 100vh;
+  min-height: 100vh;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 82%;
+}
+
+h1 {
+  font-size: 61px;
+  font-family: Hiragino Kaku Gothic Std;
+  font-weight: 800;
+  line-height: 91.57px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p1 {
+  font-size: 19px;
+  font-family: Hiragino Kaku Gothic Std;
+}
+
+.btn-custom-1 {
+  background-color: #d5cebd;
+  border-color: #d5cebd;
+  color: white;
+}
+
+.btn-custom-2 {
+  background-color: #fca776;
+  border-color: #fca776;
+  color: white;
+}
+
+.btn-custom-3 {
+  background-color: #d6cfa3;
+  border-color: #d6cfa3;
+  color: #fff;
+}
+
+.carousel-indicators {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 10px;
+}
+
+.carousel-indicators li {
+  height: 4px;
+}
+
+.carousel-indicators li.active {
+  height: 12px;
+}
+
+.carousel-control-prev {
+  z-index: 1050;
+  scale: 200%;
+}
+
+.carousel-control-next {
+  z-index: 1050;
+  scale: 200%;
+}
+
+.image1card {
+  max-height: 500px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.modal-body {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 41px;
+  padding: 69px 48px;
+}
+
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: #939393;
+  backdrop-filter: blur(18px);
+  border-radius: 35px;
+}
+
+.modal-content p {
+  color: #fff;
+}
+
+.modal1text {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.modal-body button {
+  background-color: #b6ba10;
+  height: 66px;
+  width: 100%;
+  margin-top: 15px;
+}
