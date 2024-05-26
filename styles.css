@@ -5,3 +5,36 @@
     object-fit: cover;
     object-position: center;
   }
+  
+  .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+  }
+  
+  h1 {
+    font-size: 61px;
+  }
+  
+  p1 {
+    font-size: 19px;
+  }
+  
+  .btn-custom-1 {
+    background-color: #d5cebd;
+    border-color: #d5cebd;
+    color: white;
+  }
+  
+  .btn-custom-2 {
+    background-color: #fca776;
+    border-color: #fca776;
+    color: white;
+  }
+  
+  .btn-custom-3 {
+    background-color: #d6cfa3;
+    border-color: #d6cfa3;
+    color: white;
+  }
