@@ -15,6 +15,9 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
+  <!-- Scripts -->
+
   <body>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -48,6 +51,9 @@
 
       <div class="carousel-inner">
         <div class="carousel-item active">
+          <div class="logodiv">
+            <img class="img-fluid logo" src="assets/img/Logo.png" />
+          </div>
           <img
             class="image1 d-block w-100"
             src="assets/img/slide-1.jpg"
@@ -66,10 +72,21 @@
               >
                 See More
               </button>
+              <div class="location">
+                <img
+                  class="image imagelocation"
+                  src="assets/other/location.svg"
+                  alt="Location icon"
+                />
+                <a>Sơn Động District, Vietnam</a>
+              </div>
             </div>
           </div>
         </div>
         <div class="carousel-item">
+          <div class="logodiv">
+            <img class="img-fluid logo box-shadow" src="assets/img/Logo.png" />
+          </div>
           <img
             class="image1 d-block w-100"
             src="assets/img/slide-2.jpg"
@@ -83,13 +100,26 @@
                 type="button"
                 class="btn btn-custom-2 pl-4 pr-4"
                 style="margin-top: 20px"
+                data-toggle="modal"
+                data-target="#modal2"
               >
                 See More
               </button>
+              <div class="location">
+                <img
+                  class="image imagelocation"
+                  src="assets/other/location.svg"
+                  alt="Location icon"
+                />
+                <a>Phu Quoc, Vietnam</a>
+              </div>
             </div>
           </div>
         </div>
         <div class="carousel-item">
+          <div class="logodiv">
+            <img class="img-fluid logo box-shadow" src="assets/img/Logo.png" />
+          </div>
           <img
             class="image1 w-100"
             src="assets/img/slide-3.jpg"
@@ -97,7 +127,7 @@
           />
           <div class="carousel-caption text-center">
             <h1>Paradise Found</h1>
-            <p></p>
+            <p>
               Cruise Through Paradise: Discover the Enchantment of Ha Long Bay
             </p>
             <div>
@@ -105,9 +135,19 @@
                 type="button"
                 class="btn btn-custom-3 pl-4 pr-4"
                 style="margin-top: 20px"
+                data-toggle="modal"
+                data-target="#modal3"
               >
                 See More
               </button>
+              <div class="location">
+                <img
+                  class="image imagelocation"
+                  src="assets/other/location.svg"
+                  alt="Location icon"
+                />
+                <a>Hạ Long Bay, Vietnam</a>
+              </div>
             </div>
           </div>
         </div>
@@ -115,7 +155,10 @@
 
       <!-- Modals -->
       <div class="modal fade" id="modal1" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div
+          class="modal-dialog modal-dialog-centered modal-xl"
+          role="document"
+        >
           <div class="modal-content">
             <div class="modal-body">
               <img
@@ -124,27 +167,89 @@
                 alt="First card"
               />
               <div>
-              <p class="modal1text">
-                Descend into a world of towering stalactites and shimmering
-                pools. Explore Vietnam's labyrinthine cave systems, where
-                ancient secrets and breathtaking beauty collide.
-              </p>
-              <button
-                type="button"
-                class="btn btn-primary"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                Find out more
-              </button>
-            </div>
+                <p class="modal1text">
+                  Descend into a world of towering stalactites and shimmering
+                  pools. Explore Vietnam's labyrinthine cave systems, where
+                  ancient secrets and breathtaking beauty collide.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary modal-btn-1"
+                  href="https://www.mmgyglobal.com"
+                >
+                  Find out more
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
+
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog">
+        <div
+          class="modal-dialog modal-dialog-centered modal-xl"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-body">
+              <img
+                class="image2card"
+                src="assets/img/slide-2-card.jpg"
+                alt="First card"
+              />
+              <div>
+                <p class="modal2text">
+                  Immerse yourself in the vibrant energy of Vietnam's bustling
+                  night markets. Savour an explosion of flavours as you navigate
+                  a maze of food stalls, each one a testament to Vietnam's rich
+                  culinary heritage.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary modal-btn-2"
+                  href="https://www.mmgyglobal.com"
+                >
+                  Find out more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modal3" tabindex="-1" role="dialog">
+        <div
+          class="modal-dialog modal-dialog-centered modal-xl"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-body">
+              <img
+                class="image3card"
+                src="assets/img/slide-3-card.jpg"
+                alt="First card"
+              />
+              <div>
+                <p class="modal3text">
+                  Embark on a journey through a mystical landscape of towering
+                  limestone pillars and emerald waters. Cruise through the
+                  awe-inspiring Ha Long Bay.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary modal-btn-3"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  Find out more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Carousel left and right buttons -->
-      
+
       <a
         class="carousel-control-prev"
         href="#advertcarousel"
