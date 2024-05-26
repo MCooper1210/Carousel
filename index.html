@@ -30,6 +30,9 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Carousel bottom indicators -->
+
     <div id="advertcarousel" class="carousel slide" data-interval="false">
       <ol class="carousel-indicators">
         <li
@@ -40,6 +43,9 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
+
+      <!-- Carousel pages -->
+
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
@@ -47,14 +53,16 @@
             src="assets/img/slide-1.jpg"
             alt="First slide"
           />
-          <div class="carousel-caption d-none d-md-block text-center">
+          <div class="carousel-caption text-center">
             <h1>Hidden Wonders</h1>
-            <p1>Unveil the Secrets of Ancient Caves</p1>
+            <p>Unveil the Secrets of Ancient Caves</p>
             <div>
               <button
                 type="button"
                 class="btn btn-custom-1 pl-4 pr-4"
                 style="margin-top: 20px"
+                data-toggle="modal"
+                data-target="#modal1"
               >
                 See More
               </button>
@@ -67,9 +75,9 @@
             src="assets/img/slide-2.jpg"
             alt="Second slide"
           />
-          <div class="carousel-caption d-none d-md-block text-center">
+          <div class="carousel-caption text-center">
             <h1>Culinary Delights</h1>
-            <p1>A Feast for the Senses: Explore Vietnam's Street Food Scene</p1>
+            <p>A Feast for the Senses: Explore Vietnam's Street Food Scene</p>
             <div>
               <button
                 type="button"
@@ -87,12 +95,11 @@
             src="assets/img/slide-3.jpg"
             alt="Third slide"
           />
-          <div class="carousel-caption d-none d-md-block text-center">
+          <div class="carousel-caption text-center">
             <h1>Paradise Found</h1>
-            <p1
-              >Cruise Through Paradise: Discover the Enchantment of Ha Long
-              Bay</p1
-            >
+            <p></p>
+              Cruise Through Paradise: Discover the Enchantment of Ha Long Bay
+            </p>
             <div>
               <button
                 type="button"
@@ -105,6 +112,39 @@
           </div>
         </div>
       </div>
+
+      <!-- Modals -->
+      <div class="modal fade" id="modal1" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <img
+                class="image1card"
+                src="assets/img/slide-1-card.jpg"
+                alt="First card"
+              />
+              <div>
+              <p class="modal1text">
+                Descend into a world of towering stalactites and shimmering
+                pools. Explore Vietnam's labyrinthine cave systems, where
+                ancient secrets and breathtaking beauty collide.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                Find out more
+              </button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Carousel left and right buttons -->
+      
       <a
         class="carousel-control-prev"
         href="#advertcarousel"
